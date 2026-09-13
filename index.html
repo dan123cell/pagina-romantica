@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para el amor de mi vida ❤️</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3, #c471ed);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            color: #fff;
+        }
+
+        /* Corazones flotando */
+        .heart {
+            position: fixed;
+            bottom: -50px;
+            font-size: 25px;
+            animation: subir 8s linear infinite;
+            opacity: 0.8;
+            pointer-events: none;
+        }
+
+        @keyframes subir {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .contenedor {
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            padding: 35px 25px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+            border: 1px solid rgba(255,255,255,0.3);
+            z-index: 2;
+        }
+
+        .corazon {
+            font-size: 70px;
+            animation: latido 1.3s infinite;
+        }
+
+        @keyframes latido {
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        h1 {
+            margin-top: 10px;
+            font-size: 38px;
+            text-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        .subtitulo {
+            margin-top: 10px;
+            font-size: 18px;
+            opacity: 0.95;
+        }
+
+        .carta {
+            margin-top: 30px;
+            background: rgba(255,255,255,0.92);
+            color: #555;
+            padding: 25px;
+            border-radius: 20px;
+            text-align: left;
+            line-height: 1.7;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .carta h2 {
+            text-align: center;
+            color: #e91e63;
+            margin-bottom: 15px;
+        }
+
+        .boton {
+            margin-top: 25px;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            background: #e91e63;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            transform: scale(1.08);
+            background: #c2185b;
+        }
+
+        #sorpresa {
+            display: none;
+            margin-top: 25px;
+            font-size: 21px;
+            line-height: 1.6;
+            animation: aparecer 1s ease;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .firma {
+            margin-top: 25px;
+            font-size: 17px;
+            font-style: italic;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            .corazon {
+                font-size: 60px;
+            }
+
+            .carta {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Corazones -->
+    <div class="heart" style="left:10%; animation-delay:0s;">❤️</div>
+    <div class="heart" style="left:25%; animation-delay:2s;">💕</div>
+    <div class="heart" style="left:45%; animation-delay:4s;">💗</div>
+    <div class="heart" style="left:65%; animation-delay:1s;">❤️</div>
+    <div class="heart" style="left:80%; animation-delay:3s;">💖</div>
+    <div class="heart" style="left:90%; animation-delay:5s;">💕</div>
+
+    <div class="contenedor">
+
+        <div class="corazon">❤️</div>
+
+        <h1>Para ti, mi amor</h1>
+
+        <p class="subtitulo">
+            Hay algo que quería decirte...
+        </p>
+
+        <div class="carta">
+
+            <h2>💌 Una pequeña carta</h2>
+
+            <p>
+                Desde que llegaste a mi vida, muchas cosas cambiaron.
+                Poco a poco te convertiste en una de las personas
+                más importantes para mí.
+            </p>
+
+            <br>
+
+            <p>
+                Me encanta compartir momentos contigo, reír juntos,
+                hablar de cualquier cosa y simplemente saber que
+                estás ahí.
+            </p>
+
+            <br>
+
+            <p>
+                Y aunque a veces no encuentre las palabras correctas,
+                quiero que sepas que te quiero muchísimo. ❤️
+            </p>
+
+        </div>
+
+        <button class="boton" onclick="mostrarSorpresa()">
+            💝 Tengo algo más que decirte
+        </button>
+
+        <div id="sorpresa">
+
+            <p>
+                ❤️ <strong>Te quiero muchísimo.</strong> ❤️
+            </p>
+
+            <p>
+                se que no soy el mejor novio, se q aveces no te dejo ser 
+              tu pero no lo hago con la intencion de controlarte, sino por 
+              q te amo y conozco a los hombre y no quiero q otro hombres
+              se hagan la idea de pensar cosas contigo. lo prometiste q solo en
+              nuestra casa seria asi y cuando salgamos tu y yo.
+            </p>
+
+            <p>
+                Gracias por formar parte de mi vida.
+            </p>
+
+            <div class="firma">
+                Con todo mi amor 💕
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function mostrarSorpresa() {
+
+            const mensaje = document.getElementById("sorpresa");
+
+            if (mensaje.style.display === "block") {
+                mensaje.style.display = "none";
+            } else {
+                mensaje.style.display = "block";
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
